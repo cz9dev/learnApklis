@@ -2,6 +2,10 @@
 
 Es una aplicación para ir aprendiendo sobre el api de verificación de compra y actualización de aplicaciones en apklis
 
+## Lenguajes utilizados
+
+Kotlin
+
 ## Api's principales
 
 Api para comprobar el pago de una aplicación
