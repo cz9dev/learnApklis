@@ -6,7 +6,7 @@ import androidx.core.content.ContextCompat
 import com.baoyachi.stepview.VerticalStepView
 import cu.uci.apklischeckpayment.Verify
 
-const val PACKAGE_ID = "zaldivar.carlos.calcelect" //nombre del paquete como esta en apklis
+const val PACKAGE_ID = "zaldivar.carlos.learnapklis" //nombre del paquete como esta en apklis
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
