@@ -21,3 +21,7 @@ https://github.com/Z17-CU/apklischeckpayment.git
 * Para la lista de verificación de compra
 
 https://github.com/baoyachi/StepView.git
+
+* Librería para la creacion del slider
+
+https://github.com/denzcoskun/ImageSlideshow.git
