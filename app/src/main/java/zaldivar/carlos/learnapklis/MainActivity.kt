@@ -4,6 +4,7 @@ import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.baoyachi.stepview.VerticalStepView
@@ -19,6 +20,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val btnComprarApk = findViewById<Button>(R.id.btn_comprar_apk)
 
 
         // Variables utilizadas para resivir respuesta desde el api
@@ -58,6 +61,7 @@ class MainActivity : AppCompatActivity() {
                 list0.add("Usted esta autenticado correctamente")
                 list0.add("Ya ha comprado la aplicación")
                 list0.add("Compra verificada, Usted puede continuar")
+                btnComprarApk.visibility = Button.INVISIBLE
             }
         }
 
@@ -119,7 +123,7 @@ class MainActivity : AppCompatActivity() {
 
         imageList.add(SlideModel(R.drawable.baner1, ScaleTypes.FIT))
         imageList.add(SlideModel(R.drawable.baner2, ScaleTypes.FIT))
-        imageList.add(SlideModel(R.drawable.baner2, ScaleTypes.FIT))
+        imageList.add(SlideModel(R.drawable.baner3, ScaleTypes.FIT))
 
         val imageSlider = findViewById<ImageSlider>(R.id.image_slide)
         imageSlider.setImageList(imageList)
@@ -131,12 +135,12 @@ class MainActivity : AppCompatActivity() {
             override fun onItemSelected(position: Int) {
                 when (position) {
                     0 -> {
-                        val uri = Uri.parse("https://www.apklis.cu/application/cu.apklis.unehogar")
+                        val uri =
+                            Uri.parse("https://www.apklis.cu/application/zaldivar.carlos.calcelect")
                         rateAction(uri)
                     }
                     1 -> {
-                        val uri =
-                            Uri.parse("https://www.apklis.cu/application/zaldivar.carlos.calcelect")
+                        val uri = Uri.parse("https://www.apklis.cu/application/cu.apklis.unehogar")
                         rateAction(uri)
                     }
                     2 -> {
@@ -146,6 +150,14 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         })
+
+        /**
+         * Impementacion de la compra
+         */
+        val uri = Uri.parse("https://www.apklis.cu/application/zaldivar.carlos.learnapklis")
+        btnComprarApk.setOnClickListener {
+            rateAction(uri)
+        }
     }
 
     /**
