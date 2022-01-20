@@ -2,6 +2,7 @@
 buildscript {
     ext.kotlin_version = "1.5.31"
     repositories {
+        google()
         maven { url 'https://jitpack.io' }
         maven {
             url 'http://nexus.prod.uci.cu/repository/maven-all'
@@ -15,7 +16,6 @@ buildscript {
             url 'http://nexus.prod.uci.cu/repository/maven.google.com'
             allowInsecureProtocol = true
         }
-        google()
         //google()
         //mavenCentral()
     }
@@ -30,6 +30,7 @@ buildscript {
 
 allprojects {
     repositories {
+        google()
         maven { url 'https://jitpack.io' }
         maven {
             url 'http://nexus.prod.uci.cu/repository/maven-all'
@@ -43,7 +44,6 @@ allprojects {
             url 'http://nexus.prod.uci.cu/repository/maven.google.com'
             allowInsecureProtocol = true
         }
-        google()
         //google()
         //mavenCentral()
         //jcenter() // Warning: this repository is going to shut down soon

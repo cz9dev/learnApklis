@@ -33,6 +33,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
     implementation 'com.github.Z17-CU:apklischeckpayment:0.0.2'
     implementation 'com.github.baoyachi:StepView:1.9'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
