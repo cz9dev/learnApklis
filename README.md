@@ -25,3 +25,7 @@ https://github.com/baoyachi/StepView.git
 * Librería para la creacion del slider
 
 https://github.com/denzcoskun/ImageSlideshow.git
+
+* Aplicación en tienda Apklis
+
+https://www.apklis.cu/application/zaldivar.carlos.learnapklis
